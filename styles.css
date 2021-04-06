@@ -75,7 +75,7 @@ main {
     display: flex;
     justify-content: center;
     position:relative;
-    margin-top: 70px;
+    margin-top: 80px;
 }
 
 .google-logo {
@@ -98,7 +98,7 @@ main {
     height: 45px;
     border-radius:30px;
     border:1px solid #dcdcdc;
-    padding: 0px 60px;
+    padding: 0px 40px;
     font-size: 15px;
   }
 
