@@ -1,0 +1,172 @@
+body {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h1 . . . h2"
+        "m m m m m"
+        "s s s s s"
+        "b b b b b"
+        "f f f f f"
+    }
+    
+    /* Header */
+    
+.header1 {
+        grid-area: h1;
+        display: flex;
+        justify-content: flex-start;
+}
+
+.header2 {
+    grid-area: h2;
+    display: flex;
+    justify-content: flex-end;
+}
+   
+.grid-icon{
+    width: 17px;
+    position:relative;
+    top:3px;
+    margin: 0px 10px 0px 0px;
+}
+
+.headerlinks {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    padding: 6px 10px 6px 10px;
+}
+
+.headerlinks a {
+    color: #000;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size:12px;
+}
+
+.headerlinks a:hover {
+    text-decoration: underline;
+}
+
+.signin {
+    width: 60px;
+    height: 35px;
+    background-color: #4885ed;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    top: 6px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.signin a {
+    color:white;
+    text-decoration: none;
+}
+
+/* Main */
+
+main {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.google-logo {
+    width:280px;
+    margin: 8% 0 20px 0;
+}
+
+/* Div Search */
+
+.search {
+    grid-area: s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.searchbar {
+    width: 100%;
+    max-width:460px;
+    height: 45px;
+    border-radius:30px;
+    border:1px solid #dcdcdc;
+    padding: 0px 60px;
+    font-size: 15px;
+  }
+
+.searchbar:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+
+#microphoneicon {
+    position:relative;
+    top:8px;
+    right: 45px;
+}
+
+#searchicon {
+    position:relative;
+    top:7px;
+    left: 42px;
+}
+
+.button {
+    grid-area: b;
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+}
+.but {
+    background-color: #f5f5f5;
+    max-width: 130px;
+    border:none;
+    color:#707070;
+    font-size:13px;
+    padding: 10px 10px;
+    margin:5px;
+    border-radius: 6px;
+    outline:none;
+}
+
+.but:hover{
+    border: 1px solid #c8c8c8;
+    color:#808080;
+}
+
+.but a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer */
+
+footer {
+    grid-area: f;
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+
+.advimg {
+    width: 40px;
+    padding: 10px 10px;
+    position: relative;
+    top: 25px;
+}
+
+footer a {
+    color: blue;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
