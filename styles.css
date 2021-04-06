@@ -74,12 +74,13 @@ main {
     grid-area: m;
     display: flex;
     justify-content: center;
-    align-content: center;
+    position:relative;
+    margin-top: 70px;
 }
 
 .google-logo {
     width:280px;
-    margin: 8% 0 20px 0;
+    margin: 25px 0;
 }
 
 /* Div Search */
