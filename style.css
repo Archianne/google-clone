@@ -10,6 +10,7 @@ header {
   header .left {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 50%;
   }
   header .left #menu {
@@ -33,7 +34,7 @@ header .right a {
 }
 @media (min-width: 700px) {
   header .left a:hover,
-header .right a:hover {
+  header .right a:hover {
     text-decoration: underline;
   }
 }
@@ -111,7 +112,8 @@ main .search-bar input:focus {
   outline: none;
 }
 main .search-bar input:hover {
-  box-shadow: rgba(60, 64, 67, 0.171) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.171) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 main .buttons button {
   background-color: #f8f9fa;
@@ -185,8 +187,8 @@ footer .other-links .left a:hover {
 }
 @media (max-width: 700px) {
   footer .other-links .right,
-footer .other-links .center,
-footer .other-links .left {
+  footer .other-links .center,
+  footer .other-links .left {
     display: flex;
     justify-content: center;
     margin-top: -15px;
