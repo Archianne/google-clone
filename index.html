@@ -1,50 +1,105 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G00gle</title>
-</head>
-
-<body>
-
-    <div class="header1">
-        <button class="headerlinks"> <a href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a></button>
-        <button class="headerlinks"><a href="https://store.google.com/GB/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB">Store</a></button>
-    </div>
-
-    <div class="header2">
-        <button class="headerlinks"> <a href="https://accounts.google.com/signin">Gmail</a></button>
-        <button class="headerlinks"> <a href="https://www.google.co.uk/imghp?hl=en&ogbl">Images</a></button>
-        <button class="headerlinks"> <a href=""><img style="width: 30px;" class="grid-icon" src="https://github.com/Archianne/google-page/blob/main/gallery/grid.PNG?raw=true"></a></button>
-        <button class="signin"><a href="https://accounts.google.com/signin">Sign in</a></button>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="query.css"
+      type="text/css"
+      media="screen and (max-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="images/icon.jpg" type="jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Google</title>
+  </head>
+  <body>
+    <header>
+      <div class="headerLeft">
+        <a href="#" class="fullPage">About</a>
+        <a href="#" class="fullPage">Store</a>
+        <a href="#" class="queryPage"
+          ><i class="fa fa-bars" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="queryPage"><span class="queryFont">ALL</span></a>
+        <a href="#" class="queryPage"><span class="queryFont">IMAGES</span></a>
+      </div>
+      <div class="headerRight">
+        <a href="#" class="fullPage">Gmail</a>
+        <a href="#" class="fullPage">Images</a>
+        <div class="gridBg">
+          <img
+            id="grid"
+            src="https://static.thenounproject.com/png/654601-200.png"
+            alt="grid"
+          />
+        </div>
+        <button id="signIn">Sign In</button>
+      </div>
+    </header>
 
     <main>
-        <img class="google-logo" src="https://www.google.com/logos/doodles/2019/celebrating-wellies-4652654377566208-2xa.gif" alt="Google Logo">
+      <div>
+        <img id="googleImage" src="images/google.png" alt="Google Image" />
+      </div>
+      <div class="searchBar">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" class="inputBar" />
+        <img id="microGo" src="gallery/microphone.svg" alt="Microphone Google" />
+      </div>
+      <div class="buttons">
+        <button id="GoogleButton" class="fullPage">Google Search</button>
+        <button id="LuckyButton" class="fullPage">I'm Felling Lucky</button>
+      </div>
+      <div class="langOffer">
+        <p>
+          Google offered in: <a href="#" id="linkLang">Português (Portugal)</a>
+        </p>
+      </div>
     </main>
-    
-    <div class="search">
-       
-        <img id="searchicon" style="height: 35px;" src="gallery/search.PNG">
-        <input type="text" class="searchbar" placeholder="Search Google or type a URL"></input>
-        <img style="height: 33px;" id="microphoneicon" src="gallery/mic.PNG">
-    </div>
-
-    <div class="button">
-        <button class="but" type="button"><a href="https://google.com">Google Search</a></button> 
-        <button class="but" type="button"><a href="https://www.google.com/search?q=funny+cat+memes&um=1&ie=UTF-8&tbm=isch&csf=b">I'm Feeling Lucky</a></button>  
-    </div>
 
     <footer>
-        <img class="advimg" src="https://www.google.com/images/hpp/nest-hub-2-hpp-sleepsense-68px.png" alt="Google nest">
-        <a href="https://store.google.com/product/nest_hub_2nd_gen?utm_source=hpp&utm_medium=google_oo&utm_campaign=GS106276">
-        Meet the 2nd gen Nest Hub with Sleep Sensing</a>
+      <section class="country">
+        <p id="countryUk" class="text">United Kingdom</p>
+      </section>
+      <section class="othersLinks">
+        <div class="leftLink">
+          <a href="#" class="text fullPage">Advertising</a>
+          <a href="#" class="text fullPage">Business</a>
+          <a href="#" class="text fullPage">How Search Works</a>
+          <a href="#" class="text queryPage">Settings</a>
+          <a href="#" class="text queryPage">Privacy</a>
+          <a href="#" class="text queryPage">Terms</a>
+        </div>
+        <div class="centerLink">
+          <a href="#" class="text" id="carb">
+            <img
+              class="leafCarb"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC"
+              alt="leaf"
+            />
+            Carbon Neutral Since 2007</a
+          >
+        </div>
+        <div class="rightLink">
+          <a href="#" class="text fullPage">Privacy</a>
+          <a href="#" class="text fullPage">Terms</a>
+          <a href="#" class="text fullPage">Settings</a>
+          <a href="#" class="text queryPage">Advertising</a>
+          <a href="#" class="text queryPage">Business</a>
+          <a href="#" class="text queryPage">About</a>
+        </div>
+      </section>
     </footer>
-
-</body>
+  </body>
 </html>
