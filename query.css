@@ -6,15 +6,7 @@
     flex-direction: column;
   }
   
-  .fullPage {
-    display: none;
-  }
-  
-  .queryPage {
-    display: inherit;
-  }
-  
-  .leftLink,
+   .leftLink,
   .rightLink {
     justify-content: center;
   }
@@ -29,17 +21,9 @@
     width: 50%;
   }
   
-  .queryFont {
-    font-weight: bold;
-    font-size: 12px;
-    color: #70757a;
-  }
   
   .fa-bars {
     color: #70757a;
   }
   
-  #googleImage {
-    width: 190px;
-    margin-top: 50px;
-  }
+  

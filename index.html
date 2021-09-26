@@ -3,79 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/gallery/favicon.png" type="png" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="query.css"
-      type="text/css"
-      media="screen and (max-width: 600px)"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="shortcut icon" href="images/icon.jpg" type="jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+
     <title>Google</title>
   </head>
+
   <body>
     <header>
-      <div class="headerLeft">
-        <a href="#" class="fullPage">About</a>
-        <a href="#" class="fullPage">Store</a>
-        <a href="#" class="queryPage"
+      <div class="left">
+        <a href="#" class="full-page">About</a>
+        <a href="#" class="full-page">Store</a>
+        <a href="#" class="query-page"
           ><i class="fa fa-bars" aria-hidden="true"></i
         ></a>
-        <a href="#" class="queryPage"><span class="queryFont">ALL</span></a>
-        <a href="#" class="queryPage"><span class="queryFont">IMAGES</span></a>
+        <a href="#" class="query-page"><span>ALL</span></a>
+        <a href="#" class="query-page"><span>IMAGES</span></a>
       </div>
-      <div class="headerRight">
-        <a href="#" class="fullPage">Gmail</a>
-        <a href="#" class="fullPage">Images</a>
-        <div class="gridBg">
-          <img
-            id="grid"
-            src="/gallery/grid.svg"
-            alt="grid"
-          />
+      <div class="right">
+        <a href="#" class="full-page">Gmail</a>
+        <a href="#" class="full-page">Images</a>
+        <div class="grid-bg">
+          <img id="grid" src="/gallery/grid.svg" alt="grid" />
         </div>
-        <button id="signIn">Sign In</button>
+        <button id="sign-in">Sign In</button>
       </div>
     </header>
 
     <main>
       <div>
         <img
-          id="googleImage"
+          id="google-logo"
           src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           alt="Google Image"
         />
       </div>
-      <div class="searchBar">
+      <div class="search-bar">
         <img
-          id="microGo"
-          src="gallery/microphone.svg"
-          alt="Microphone Google"
+          class="icons search-icon"
+          src="gallery/search.svg"
+          alt="Search Google"
         />
-        <input type="search" class="inputBar" />
+        <input type="search"/>
         <img
-          id="microGo"
+          class="icons microphone-icon"
           src="gallery/microphone.svg"
           alt="Microphone Google"
         />
       </div>
       <div class="buttons">
-        <button id="GoogleButton" class="fullPage">Google Search</button>
-        <button id="LuckyButton" class="fullPage">I'm Felling Lucky</button>
+        <button id="GoogleButton" class="full-page">Google Search</button>
+        <button id="LuckyButton" class="full-page">I'm Felling Lucky</button>
       </div>
-      <div class="langOffer">
+      <div class="language-offer">
         <p>
-          Google offered in: <a href="#" id="linkLang">Português (Portugal)</a>
+          Google offered in: <a href="#">Português (Brazil)</a>
         </p>
       </div>
     </main>
@@ -86,12 +76,12 @@
       </section>
       <section class="othersLinks">
         <div class="leftLink">
-          <a href="#" class="text fullPage">Advertising</a>
-          <a href="#" class="text fullPage">Business</a>
-          <a href="#" class="text fullPage">How Search Works</a>
-          <a href="#" class="text queryPage">Settings</a>
-          <a href="#" class="text queryPage">Privacy</a>
-          <a href="#" class="text queryPage">Terms</a>
+          <a href="#" class="text full-page">Advertising</a>
+          <a href="#" class="text full-page">Business</a>
+          <a href="#" class="text full-page">How Search Works</a>
+          <a href="#" class="text query-page">Settings</a>
+          <a href="#" class="text query-page">Privacy</a>
+          <a href="#" class="text query-page">Terms</a>
         </div>
         <div class="centerLink">
           <a href="#" class="text" id="carb">
@@ -104,12 +94,12 @@
           >
         </div>
         <div class="rightLink">
-          <a href="#" class="text fullPage">Privacy</a>
-          <a href="#" class="text fullPage">Terms</a>
-          <a href="#" class="text fullPage">Settings</a>
-          <a href="#" class="text queryPage">Advertising</a>
-          <a href="#" class="text queryPage">Business</a>
-          <a href="#" class="text queryPage">About</a>
+          <a href="#" class="text full-page">Privacy</a>
+          <a href="#" class="text full-page">Terms</a>
+          <a href="#" class="text full-page">Settings</a>
+          <a href="#" class="text query-page">Advertising</a>
+          <a href="#" class="text query-page">Business</a>
+          <a href="#" class="text query-page">About</a>
         </div>
       </section>
     </footer>
