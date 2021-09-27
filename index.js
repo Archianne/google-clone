@@ -1,4 +1,5 @@
 const luckyButton = document.querySelector("#lucky-button");
+const buttonText = document.querySelector("#button-text");
 
 const text = [
   "I’m Feeling Wonderful",
@@ -9,15 +10,15 @@ const text = [
 
 let time = 0;
 
-luckyButton.onmouseover = () => {
+buttonText.onmouseover = () => {
   let changeWords = setInterval(() => {
     time += 1;
 
     if (time === 10) {
       clearInterval(changeWords);
     } else {
-      luckyButton.onmouseout = () => {
-        luckyButton.textContent = "I'm Feeling Lucky";
+      buttonText.onmouseout = () => {
+        buttonText.innerHTML = "I'm Feeling Lucky";
         time = 0;
         clearInterval(changeWords);
       };
@@ -25,7 +26,7 @@ luckyButton.onmouseover = () => {
 
     let i = Math.floor(Math.random() * text.length);
     let item = text[i];
-    console.log(item);
+    buttonText.innerHTML = item;
   }, 100);
 
   //     var pos = -((Math.floor((Math.random() * 36) + 1)) * 5 - 3) * 5

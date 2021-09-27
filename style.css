@@ -114,25 +114,28 @@ main .search-bar input:focus {
 main .search-bar input:hover {
   box-shadow: rgba(60, 64, 67, 0.171) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+main .buttons {
+  display: flex;
+}
 main .buttons button {
-  display: block;
-  appearance: none;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 4px;
+  color: #3c4043;
   font-family: arial, sans-serif;
   font-size: 14px;
   margin: 11px 4px;
   padding: 0 16px;
-  line-height: 27px;
+  line-height: 35px;
   height: 36px;
   min-width: 54px;
   text-align: center;
   cursor: pointer;
   user-select: none;
-  border: none;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-  color: #3c4043;
   background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
   background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
+  overflow: hidden;
+  transition: all 0.3s;
 }
 main .buttons button:hover {
   border-color: #cfcfcf;
@@ -145,19 +148,12 @@ main .buttons button:active {
   outline: none !important;
 }
 main .buttons button:focus {
-  outline: 1px #08c solid;
+  outline: none;
 }
-main .buttons button ul {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
-  -webkit-transition: margin-top 0.45s ease-in-out;
-  -moz-transition: margin-top 0.45s ease-in-out;
-  transition: margin-top 0.45s ease-in-out;
-}
-main .buttons button ul li {
-  display: block;
-  height: 36px;
+main .buttons #lucky-button p {
+  display: inline-block;
+  height: 100%;
+  margin: 0;
 }
 main .language-offer {
   font-size: 13px;
