@@ -137,10 +137,9 @@ main {
 
   .buttons {
     button {
-      background-color: #f8f9fa;
-      border: none;
-      border-radius: 4px;
-      color: #3c4043;
+      display: block;
+      appearance: none;
+      // overflow: hidden;
       font-family: arial, sans-serif;
       font-size: 14px;
       margin: 11px 4px;
@@ -151,11 +150,63 @@ main {
       text-align: center;
       cursor: pointer;
       user-select: none;
+      border: none;
+      border-radius: 4px;
+      background-color: #f8f9fa;
+      color: #3c4043;
+      background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+      background-image: -moz-linear-gradient(top, #f5f5f5, #f1f1f1);
 
       &:hover {
-        box-shadow: rgba(0, 0, 0, 0.39) 0px 0px 2px;
+        border-color: darken(#dcdcdc, 5%);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
+        background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+        background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+      }
+      &:active {
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px;
+        outline: none !important;
+      }
+
+      &:focus {
+        outline: 1px #08c solid;
+      }
+      
+      ul {
+        margin-top: 0;
+        padding: 0;
+        list-style: none;
+        -webkit-transition: margin-top 0.45s ease-in-out;
+        -moz-transition: margin-top 0.45s ease-in-out;
+        transition: margin-top 0.45s ease-in-out;
+        li {
+          display: block;
+          height: 36px;
+         
+        }
       }
     }
+
+    // button {
+    //   background-color: #f8f9fa;
+    //   border: none;
+    //   border-radius: 4px;
+    //   color: #3c4043;
+    //   font-family: arial, sans-serif;
+    //   font-size: 14px;
+    //   margin: 11px 4px;
+    //   padding: 0 16px;
+    //   line-height: 27px;
+    //   height: 36px;
+    //   min-width: 54px;
+    //   text-align: center;
+    //   cursor: pointer;
+    //   user-select: none;
+
+    //   &:hover {
+    //     box-shadow: rgba(0, 0, 0, 0.39) 0px 0px 2px;
+    //   }
+    // }
   }
 
   .language-offer {
