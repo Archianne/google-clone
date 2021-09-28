@@ -6,65 +6,100 @@
     <link rel="shortcut icon" href="/img/favicon.png" type="png" />
     <link rel="stylesheet" href="style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="fonts/fonts.css" rel="stylesheet" />
-
     <title>Google</title>
   </head>
 
   <body>
     <header>
       <div class="left">
-        <a href="#" class="full-page">About</a>
-        <a href="#" class="full-page">Store</a>
-        <a href="#" class="query-page">
+        <a
+          target="blank"
+          href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header"
+          class="full-page"
+          id="about"
+          >About</a
+        >
+        <a
+          target="blank"
+          href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB"
+          class="full-page"
+          >Store</a
+        >
+        <a target="blank" href="#" class="query-page">
           <img id="menu" src="/img/menu.svg" alt="menu"
         /></a>
-        <a href="#" class="query-page"><span>ALL</span></a>
-        <a href="#" class="query-page"><span>IMAGES</span></a>
+        <a
+          target="blank"
+          href="https://www.google.co.uk/webhp?hl=en&output=search&sa=X&ved=0ahUKEwim8p6D3aHzAhUOLBoKHcSjAm8Q0tQDCA0oAA"
+          class="query-page"
+          ><span>ALL</span></a
+        >
+        <a
+          target="blank"
+          href="https://www.google.co.uk/webhp?sa=X&hl=en&output=search&tbm=isch&tbo=u&ved=0ahUKEwjp_amF3aHzAhUlxYUKHe0-A0kQ0tQDCA8oAQ"
+          class="query-page"
+          ><span>IMAGES</span></a
+        >
       </div>
       <div class="right">
-        <a href="#" class="full-page">Gmail</a>
-        <a href="#" class="full-page">Images</a>
+        <a
+          target="blank"
+          href="https://mail.google.com/mail/u/0/"
+          class="full-page"
+          >Gmail</a
+        >
+        <a
+          target="blank"
+          href="https://www.google.co.uk/imghp?hl=en&ogbl"
+          class="full-page"
+          >Images</a
+        >
         <div class="grid-bg">
           <img id="grid" src="/img/grid.svg" alt="grid" />
         </div>
         <button id="sign-in">Sign In</button>
+        <img
+          id="profile-picture"
+          src="https://lh3.googleusercontent.com/ogw/ADea4I6visgFM-QV8t8xtbW6dZX8evDw1nO6QoYh6RsGPgo=s32-c-mo"
+          alt="Google Picture"
+          class="hide"
+        />
       </div>
     </header>
 
     <main>
-      <div>
+      <div class="google-logo-div">
         <img
           id="google-logo"
           src="https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           alt="Google Image"
         />
       </div>
-      <div class="search-bar">
-        <img
-          class="icons search-icon"
-          src="/img/search.svg"
-          alt="Search Google"
-        />
-        <input type="search" />
-        <img
-          class="icons microphone-icon"
-          src="/img/microphone.svg"
-          alt="Microphone Google"
-        />
-      </div>
-      <div class="buttons">
-        <button id="google-button" class="full-page">Google Search</button>
-        <button id="lucky-button" class="full-page">
-          <p id="button-text">I'm Feeling Lucky</p>
-        </button>
-      </div>
+
+      <form>
+        <div class="search-bar">
+          <img
+            class="icons search-icon"
+            src="/img/search.svg"
+            alt="Search Google"
+          />
+          <input type="search" id="search-input" />
+          <img
+            class="icons microphone-icon"
+            src="/img/microphone.svg"
+            alt="Microphone Google"
+          />
+        </div>
+        <div class="buttons">
+          <button id="google-button" class="full-page" type="submit">
+            Google Search
+          </button>
+          <button id="lucky-button" class="full-page" type="submit">
+            <p id="button-text">I'm Feeling Lucky</p>
+          </button>
+        </div>
+      </form>
+
       <div class="language-offer full-page">
         <p>Google offered in: <a href="#">Português (Brazil)</a></p>
       </div>

@@ -1,5 +1,9 @@
 const luckyButton = document.querySelector("#lucky-button");
+const googleSearchButton = document.querySelector("#google-button");
 const buttonText = document.querySelector("#button-text");
+const searchInput = document.querySelector("#search-input");
+const signInButton = document.querySelector("#sign-in");
+const profilePicture = document.querySelector("#profile-picture");
 
 const text = [
   "I’m Feeling Wonderful",
@@ -13,6 +17,7 @@ const text = [
 ];
 
 let time = 0;
+let item = "I'm Feeling Lucky";
 
 buttonText.onmouseover = () => {
   let changeWords = setInterval(() => {
@@ -29,7 +34,24 @@ buttonText.onmouseover = () => {
     }
 
     let i = Math.floor(Math.random() * text.length);
-    let item = text[i];
+    item = text[i];
     buttonText.innerHTML = item;
   }, 100);
 };
+
+googleSearchButton.addEventListener("click", () => {
+  if (searchInput.value.length > 0) {
+    let URL = "http://www.google.com/search?q=" + searchInput.value;
+    window.open(URL, "Google");
+  }
+});
+
+luckyButton.addEventListener("click", () => {
+  let URL = "http://www.google.com/search?q=" + item + "&btnI";
+  window.open(URL, "Lucky_Search");
+});
+
+(signInButton).addEventListener("click", () => {
+  signInButton.classList.toggle("hide");
+  profilePicture.classList.toggle("hide");
+});

@@ -4,9 +4,10 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  margin: 3px;
+  padding: 6px;
 
   .left {
+    font: 14px arial, sans-serif;
     @media (max-width: 700px) {
       display: flex;
       flex-direction: row;
@@ -17,6 +18,11 @@ header {
         width: 23px;
         color: #70757a;
         margin-right: 10px;
+      }
+
+      #about {
+        margin: 0 5px 0 15px;
+        padding: 5px;
       }
     }
 
@@ -31,7 +37,6 @@ header {
   .right {
     a {
       text-decoration: none;
-      font: 14px arial, sans-serif;
       color: #222;
       margin: 0px 5px;
       padding: 5px;
@@ -47,11 +52,12 @@ header {
   .right {
     display: flex;
     align-items: center;
+    font: 13px arial, sans-serif;
 
     #sign-in {
       font: 14px arial, Helvetica, sans-serif;
       background-color: #1a73e8;
-      margin: 0px 8px;
+      margin: 0 8px;
       padding: 9px 23px;
       color: #fff;
       border-radius: 4px;
@@ -59,9 +65,18 @@ header {
       cursor: pointer;
     }
 
+    #profile-picture {
+      margin-left: 6px;
+      padding: 4px;
+    }
+
+    .hide {
+      display: none;
+    }
+
     #grid {
-      width: 25px;
-      height: 25px;
+      width: 23px;
+      height: 23px;
       padding: 8px;
       cursor: pointer;
     }
@@ -85,6 +100,8 @@ main {
   align-items: center;
   flex-direction: column;
   height: 50vh;
+  margin-top: 10vh;
+
 
   #google-logo {
     width: 272px;
@@ -133,10 +150,19 @@ main {
           rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
       }
     }
+
+    // removes the x from search bar
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+      display: none;
+    }
   }
 
   .buttons {
     display: flex;
+    justify-content: center;
 
     button {
       background-color: #f8f9fa;
