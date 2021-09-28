@@ -6,6 +6,10 @@ const text = [
   "I’m Feeling Artistic",
   "I’m Feeling Hungry",
   "I’m Feeling Puzzled",
+  "I’m Feeling Doodly",
+  "I’m Feeling Stellar",
+  "I’m Feeling Trendy",
+  "I’m Feeling Playful",
 ];
 
 let time = 0;
@@ -18,9 +22,9 @@ buttonText.onmouseover = () => {
       clearInterval(changeWords);
     } else {
       buttonText.onmouseout = () => {
+        clearInterval(changeWords);
         buttonText.innerHTML = "I'm Feeling Lucky";
         time = 0;
-        clearInterval(changeWords);
       };
     }
 
@@ -28,26 +32,4 @@ buttonText.onmouseover = () => {
     let item = text[i];
     buttonText.innerHTML = item;
   }, 100);
-
-  //     var pos = -((Math.floor((Math.random() * 36) + 1)) * 5 - 3) * 5
-
-  //   setTimeout(function () {
-  //     luckyButton.querySelector("ul").style.marginTop = pos + "px";
-  //   }, 300);
 };
-
-//on hover keep changing the text content of the button
-//go through all the array
-//select one
-//goes back to im feeling lucky when mouse out
-{
-  /* <li>I’m Feeling Lucky</li>
-            <li>I’m Feeling Artistic</li>
-            <li>I’m Feeling Doodly</li>
-            <li>I’m Feeling Hungry</li>
-            <li>I’m Feeling Playful</li>
-            <li>I’m Feeling Puzzled</li>
-            <li>I’m Feeling Stellar</li>
-            <li>I’m Feeling Trendy</li>
-            <li>I’m Feeling Wonderful</li> */
-}
