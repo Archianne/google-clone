@@ -2,6 +2,10 @@
 This is the Week 1 project I've done with @SchoolOfCode, and it was initially build with only HTML and CSS. I have decided to refactor it and implement new features with JavaScript and Sass.
 
 <p align="center">
+  <a href="https://archianne.codes/google-page/">DEMO</a>
+</p>
+
+<p align="center">
 <kbd>
 <img align="center" src='https://awesomescreenshot.s3.amazonaws.com/image/2519429/14165388-19ef4dd8a0b18190135b056b8fde844d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20210928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210928T190519Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=19735844b5c7aa385f1d5cce567d5e91db726d972d040d02cd1e646ba6d6322b'/>
 </kbd>
