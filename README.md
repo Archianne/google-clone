@@ -7,7 +7,7 @@ This is the Week 1 project I've done with @SchoolOfCode, and it was initially bu
 
 <p align="center">
 <kbd>
-<img align="center" src='https://awesomescreenshot.s3.amazonaws.com/image/2519429/14165388-19ef4dd8a0b18190135b056b8fde844d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20210928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210928T190519Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=19735844b5c7aa385f1d5cce567d5e91db726d972d040d02cd1e646ba6d6322b'/>
+<img align="center" src='https://github.com/Archianne/google-clone/blob/main/img/google-full-page.png?raw=true'/>
 </kbd>
 </p>
 
@@ -79,6 +79,6 @@ With `@mediaquery` I was also able to add how the page is shown in a mobile scre
 
 <p align="center">
 <kbd>
-<img src='https://awesomescreenshot.s3.amazonaws.com/image/2519429/14167253-621fffee2dbbc1fe8fa753ae311eb9cf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20210928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210928T194753Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=b7cdd115774c92bc0f1a340621b610931be33585f9a251fdaabd9112b5e86cad'/>
+<img src='https://github.com/Archianne/google-clone/blob/main/img/google-mobile.png?raw=true'/>
 </kbd>
 </p>
